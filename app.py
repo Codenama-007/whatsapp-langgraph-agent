@@ -7,6 +7,8 @@ from langchain_core.messages import SystemMessage , HumanMessage , AIMessage
 from twilio.rest import Client # Whatsapp Client 
 from twilio.twiml.messaging_response import MessagingResponse # Replying to the Twilio Servers 
 
+load_dotenv()
+
 # loading the Required Variables for connecting to the twilio servers 
 twilio_account_sid = os.environ["TWILIO_ACCOUNT_SID"]
 twilio_auth_token = os.environ["TWILIO_AUTH_TOKEN"]
